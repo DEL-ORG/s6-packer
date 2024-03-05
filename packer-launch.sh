@@ -9,7 +9,7 @@ else
     echo "Packer is not installed."
 curl -fsSL https://apt.releases.hashicorp.com/gpg |  apt-key add -
  apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
- apt-get update &&  apt-get install packer
+ apt-get update &&  apt-get install packer -y
 fi
 
 read -p "Please enter AWS_ACCESS_KEY_ID: " AWS_ACCESS_KEY_ID
